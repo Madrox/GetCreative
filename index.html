@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>David Horn</title>
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+  <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Random creativity tips">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=0">
+
+    <meta name="author" content="david.horn@d8a.me">
+    <meta name="keywords" content="creativity,design,tips">
+
+    <meta property="og:title" content="Get Creative" />
+    <meta property="og:description" content="Random creativity tips" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://getcreative.d8a.me" />
+    <meta property="og:image" content="https://d8a.me/davidhorn.jpg" />
+
+    <link rel="canonical" href="https://getcreative.d8a.me" />
+
+
+    
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ffffff">
+
+  <body class="bg-washed-blue helvetica">
+        
+
+
+    <h1 id="tip" class="f-headline lh-solid pa4 m4 measure-wide center">Turn on Javascript (sorry!)</h1>
+
+
+
+
+
+    <footer class="pv4 ph3 ph5-m ph6-l mid-gray">
+            <small class="f6 db tc">Created with &hearts; by David Horn</small>
+            <div class="tc mt3">
+              <a href="https://twitter.com/madrox" title="Twitter" class="f6 dib ph2 link mid-gray dim">Twitter</a>
+              <a href="https://d8a.me"    title="Website" class="f6 dib ph2 link mid-gray dim">Web Site</a>
+              <a href="https://github.com/Madrox/GetCreative"  title="GitHub" class="f6 dib ph2 link mid-gray dim">GitHub repo</a>
+            </div>
+          </footer>
+          
+
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyBNaAP8yqZpA5TF32eS8lOFQAIjiAmoU_8",
+        authDomain: "get-creative.firebaseapp.com",
+        databaseURL: "https://get-creative.firebaseio.com",
+        projectId: "get-creative",
+        storageBucket: "get-creative.appspot.com",
+        messagingSenderId: "57754202619"
+    };
+    firebase.initializeApp(config);
+    </script>
+
+
+<script>
+    var tips = [
+        "Get an app or notebook to record interesting ideas as they come to you",
+        "Make lots of lists",
+        "Take constant notes",
+        "Set aside a regular time to review your lists of notes and ideas",
+        "Create a system to organize your ideas",
+        "Create a small project that can be accomplished within a single day",
+        
+    ]
+
+    document.getElementById('tip').innerHTML = tips[Math.floor(Math.random()*tips.length)]
+</script>
+
+
+
+
+
+  </body>
+</html>
